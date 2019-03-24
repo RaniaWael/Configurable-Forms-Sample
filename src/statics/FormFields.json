@@ -1,0 +1,54 @@
+{
+  "form": {
+    "section1" : {
+      "sectionName" : "Personal Section",
+      "fields" :[
+        {
+          "fieldName": "Name",
+          "fieldType": "string"
+        },
+        {
+          "fieldName": "Gender",
+          "fieldType": "radio button",
+          "radioBtnOptions": ["Male", "Female"]
+        },
+        {
+          "fieldName": "Date of Birth",
+          "fieldType": "date"
+        },
+        {
+          "fieldName": "Address",
+          "fieldType": "long string"
+        }
+      ]
+    },
+    "section2": {
+      "sectionName" : "Technical Section",
+      "fields" :[
+        {
+          "fieldName": "University",
+          "fieldType": "dropdown",
+          "dropdownOptions": ["GUC", "AUC", "ASU", "MUST", "BUE", "Other"],
+          "otherOption": true
+        },
+        {
+          "fieldName": "Major",
+          "fieldType": "dropdown",
+          "dropdownOptions": ["Computer Engineering", "Computer Science", "Communication Engineering", "Networks Engineering", "Business Informatics", "Other"],
+          "otherOption": true
+        },
+        {
+          "fieldName": "GPA",
+          "fieldType": "double"
+        },
+        {
+          "fieldName": "Interests",
+          "fieldType": "check list",
+          "checkListOptions": ["Web Development", "Mobile Development", "Internet of Things", "Machine Learning", "Problem Solving", "Network Security", "Data Analysis", "Other"],
+          "othersOption": true
+        }
+      ]
+    },
+    "submitBtnText": "Complete"
+    }
+}
