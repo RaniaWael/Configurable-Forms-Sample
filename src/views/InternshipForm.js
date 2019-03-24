@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Button from '../components/Button.js';
+import Header from '../components/Header.js';
 import InputField from '../components/InputField.js';
+import Button from '../components/Button.js';
 
 class InternshipForm extends Component {
   constructor(props) {
@@ -11,6 +12,7 @@ class InternshipForm extends Component {
     render() {
     return (
       <div>
+        <Header />
         <InputField />
         <Button />
       </div>
