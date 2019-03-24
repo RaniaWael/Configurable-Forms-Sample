@@ -1,14 +1,19 @@
+/* Imports */
 import React, { Component } from 'react';
 import Logo from '../images/SumergeLogo.png';
 import Bar from '../images/SumergeBar.png';
 
+/* Definig the class */
 class Header extends Component {
   constructor(props) {
       super(props);
     }
 
+    /* The View is rendered from here */
+    /* Only 1 parent div should be returned at the end */
     render() {
     return (
+
       <div style = { styles.divStyle }>
 
         <img src = { Logo } style = { styles.logoStyle } />
@@ -37,6 +42,7 @@ class Header extends Component {
   }
 }
 
+/* Constant variable for the styling */
 const styles = {
   divStyle: {
     margin: '25px',
@@ -77,4 +83,5 @@ const styles = {
   }
 };
 
+/* Exported Component */
 export default Header;
