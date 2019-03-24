@@ -5,20 +5,34 @@
       "fields" :[
         {
           "fieldName": "Name",
-          "fieldType": "string"
+          "fieldType": "string",
+          "fieldReq": "required"
         },
         {
           "fieldName": "Gender",
           "fieldType": "radio button",
-          "radioBtnOptions": ["Male", "Female"]
+          "radioBtnOptions": ["Male", "Female"],
+          "fieldReq": "required"
         },
         {
           "fieldName": "Date of Birth",
-          "fieldType": "date"
+          "fieldType": "date",
+          "fieldReq": "required"
         },
         {
           "fieldName": "Address",
-          "fieldType": "long string"
+          "fieldType": "long string",
+          "fieldReq": "required"
+        },
+        {
+          "fieldName": "Email",
+          "fieldType": "email",
+          "fieldReq": "required"
+        },
+        {
+          "fieldName": "LinkedIn Account",
+          "fieldType": "string",
+          "fieldReq": "optional"
         }
       ]
     },
@@ -29,23 +43,27 @@
           "fieldName": "University",
           "fieldType": "dropdown",
           "dropdownOptions": ["GUC", "AUC", "ASU", "MUST", "BUE", "Other"],
-          "otherOption": true
+          "otherOption": true,
+          "fieldReq": "required"
         },
         {
           "fieldName": "Major",
           "fieldType": "dropdown",
           "dropdownOptions": ["Computer Engineering", "Computer Science", "Communication Engineering", "Networks Engineering", "Business Informatics", "Other"],
-          "otherOption": true
+          "otherOption": true,
+          "fieldReq": "required"
         },
         {
           "fieldName": "GPA",
-          "fieldType": "double"
+          "fieldType": "double",
+          "fieldReq": "required"
         },
         {
           "fieldName": "Interests",
           "fieldType": "check list",
           "checkListOptions": ["Web Development", "Mobile Development", "Internet of Things", "Machine Learning", "Problem Solving", "Network Security", "Data Analysis", "Other"],
-          "othersOption": true
+          "othersOption": true,
+          "fieldReq": "required"
         }
       ]
     },
