@@ -33,8 +33,6 @@ class InputField extends Component {
 
         </label>
 
-          <checkbox options = {["option1", "option2"]} />
-
       </div>
     );
   }
