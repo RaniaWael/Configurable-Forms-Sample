@@ -13,7 +13,7 @@ class InternshipForm extends Component {
     return (
       <div>
         <Header />
-        <InputField />
+        <InputField fieldName = 'Name' fieldType = 'date' fieldReq= { true } />
         <Button />
       </div>
     );
