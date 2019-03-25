@@ -26,7 +26,7 @@
         },
         {
           "fieldName": "Email",
-          "fieldType": "email",
+          "fieldType": "string",
           "fieldReq": "required"
         },
         {
@@ -55,7 +55,7 @@
         },
         {
           "fieldName": "GPA",
-          "fieldType": "double",
+          "fieldType": "number",
           "fieldReq": "required"
         },
         {
