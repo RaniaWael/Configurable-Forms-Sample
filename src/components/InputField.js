@@ -20,7 +20,7 @@ class InputField extends Component {
 
   render() {
     return (
-      <div>
+      <div style = { styles.divStyling }>
         <label style = { styles.labelStyle }>
 
           { this.props.fieldName }
@@ -39,9 +39,13 @@ class InputField extends Component {
 }
 
 const styles = {
+  divStyling: {
+    margin: '15px'
+  },
+
   labelStyle: {
     color: '#666666',
-    margin: '15px',
+    marginRight: '15px',
     fontWeight: 'bold'
 
   },
@@ -52,7 +56,7 @@ const styles = {
     borderRadius: '4px',
     position: 'relative',
     backgroundColor: 'rgba(255,255,255,0.3)',
-    margin: '15px'
+    marginLeft: '15px'
   },
 
   number: {
@@ -61,7 +65,7 @@ const styles = {
     borderRadius: '4px',
     position: 'relative',
     backgroundColor: 'rgba(255,255,255,0.3)',
-    margin: '15px'
+    marginLeft: '15px'
   },
 
   date: {
@@ -70,7 +74,7 @@ const styles = {
     borderRadius: '4px',
     position: 'relative',
     backgroundColor: 'rgba(255,255,255,0.3)',
-    margin: '15px',
+    marginLeft: '15px',
     padding: '4px'
   },
 
@@ -80,11 +84,10 @@ const styles = {
     borderRadius: '4px',
     position: 'relative',
     backgroundColor: 'rgba(255,255,255,0.3)',
-    margin: '15px',
+    marginLeft: '15px',
     borderWidth: 'medium',
     borderColor: 'rgba(180,180,180,0.3)',
-    boxShadow: '0px 4px 20px 0px rgba(0, 0, 0, 0.05)',
-    top: '45px'
+    boxShadow: '0px 4px 20px 0px rgba(0, 0, 0, 0.05)'
   }
 
 };

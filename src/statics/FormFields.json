@@ -1,18 +1,17 @@
 {
   "form": {
-    "section1" : {
+    "sections" : [{
       "sectionName" : "Personal Section",
       "fields" :[
         {
           "fieldName": "Name",
-          "fieldType": "string",
+          "fieldType": "text",
           "fieldReq": "required"
         },
         {
           "fieldName": "Gender",
           "fieldType": "radio button",
-          "radioBtnOptions": ["Male", "Female"],
-          "fieldReq": "required"
+          "radioBtnOptions": ["Male", "Female"]
         },
         {
           "fieldName": "Date of Birth",
@@ -26,32 +25,28 @@
         },
         {
           "fieldName": "Email",
-          "fieldType": "string",
+          "fieldType": "text",
           "fieldReq": "required"
         },
         {
           "fieldName": "LinkedIn Account",
-          "fieldType": "string",
+          "fieldType": "text",
           "fieldReq": "optional"
         }
       ]
     },
-    "section2": {
+    {
       "sectionName" : "Technical Section",
       "fields" :[
         {
           "fieldName": "University",
           "fieldType": "dropdown",
-          "dropdownOptions": ["GUC", "AUC", "ASU", "MUST", "BUE", "Other"],
-          "otherOption": true,
-          "fieldReq": "required"
+          "dropdownOptions": ["GUC", "AUC", "ASU", "MUST", "BUE"]
         },
         {
           "fieldName": "Major",
           "fieldType": "dropdown",
-          "dropdownOptions": ["Computer Engineering", "Computer Science", "Communication Engineering", "Networks Engineering", "Business Informatics", "Other"],
-          "otherOption": true,
-          "fieldReq": "required"
+          "dropdownOptions": ["Computer Engineering", "Computer Science", "Communication Engineering", "Networks Engineering", "Business Informatics"]
         },
         {
           "fieldName": "GPA",
@@ -61,12 +56,10 @@
         {
           "fieldName": "Interests",
           "fieldType": "check list",
-          "checkListOptions": ["Web Development", "Mobile Development", "Internet of Things", "Machine Learning", "Problem Solving", "Network Security", "Data Analysis", "Other"],
-          "othersOption": true,
-          "fieldReq": "required"
+          "checkListOptions": ["Web Development", "Mobile Development", "Internet of Things", "Machine Learning", "Problem Solving", "Network Security", "Data Analysis"]
         }
       ]
-    },
+    }],
     "submitBtnText": "Complete"
     }
 }
