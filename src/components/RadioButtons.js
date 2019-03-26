@@ -12,7 +12,7 @@ class RadioButtons extends Component {
         <label style = { styles.radioText }>
 
           <input type = 'radio' value = { choice } onChange = { this.handleChange }
-          checked = { this.handleChoice(choice) } style = {styles.radioBtn} />
+          checked = { this.handleChoice(choice) } style = { styles.radioBtn } />
           { choice }
 
         </label>
@@ -48,12 +48,14 @@ const styles = {
     margin: '15px',
     fontWeight: 'bold'
   },
+
   radioText: {
     color: '#000000',
     fontSize: '12pt',
     margin: '15px',
     fontWeight: 'normal'
   },
+
   radioBtn: {
     color: '#47a298'
   }

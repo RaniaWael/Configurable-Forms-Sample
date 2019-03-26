@@ -3,6 +3,7 @@ import Header from '../components/Header.js';
 import InputField from '../components/InputField.js';
 import Dropdown from '../components/Dropdown.js';
 import RadioButtons from '../components/RadioButtons.js';
+import Checklist from '../components/Checklist.js';
 import Button from '../components/Button.js';
 
 class InternshipForm extends Component {
@@ -18,6 +19,7 @@ class InternshipForm extends Component {
         <InputField fieldName = 'Name' fieldType = 'date' fieldReq= { true } />
         <Dropdown fieldName = 'Letters' options = {['A', 'B', 'C']} />
         <RadioButtons fieldName='Last Letters' choices = {['X', 'Y', 'Z']} />
+        <Checklist fieldName='Our Letters' choices = {['R', 'H', 'A', 'W', 'S', 'M']} />
         <Button text='Complete' />
       </div>
     );
