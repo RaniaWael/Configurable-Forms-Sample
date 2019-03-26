@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header.js';
 import InputField from '../components/InputField.js';
+import Dropdown from '../components/Dropdown.js';
 import Button from '../components/Button.js';
 
 class InternshipForm extends Component {
@@ -14,6 +15,7 @@ class InternshipForm extends Component {
       <div>
         <Header />
         <InputField fieldName = 'Name' fieldType = 'date' fieldReq= { true } />
+        <Dropdown fieldName = 'Letters' options = {['A', 'B', 'C']} />
         <Button text='Complete' />
       </div>
     );
