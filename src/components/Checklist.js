@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 
-class RadioButtons extends Component {
+class Checklist extends Component {
   constructor(props) {
       super(props);
-      this.state = { };
+      this.state = { checkedItems: [] };
   }
 
   addChoices(){
     return this.props.choices.map((choice) =>
       <div>
-        <label style = { styles.radioText }>
+        <label style = { styles.checkText }>
 
-          <input type = 'radio' value = { choice } onChange = { this.handleChange }
-          checked = { this.handleChoice(choice) } style = { styles.radioBtn } />
+          <input type = 'checkbox' value = { choice } onChange = { this.handleChange } />
           { choice }
 
         </label>
@@ -20,12 +19,14 @@ class RadioButtons extends Component {
     );
   }
 
-  handleChoice = (value) => {
-    return this.state.valueChecked === value;
-  }
-
   handleChange = (event) => {
-    this.setState({ valueChecked: event.target.value });
+    if (this.state.checkedItems.includes(event.target.value)) {
+      var removeInd = this.state.checkedItems.indexOf(event.target.value);
+      this.state.checkedItems.splice(removeInd, 1);
+    }
+    else
+      this.setState({checkedItems: this.state.checkedItems.concat(event.target.value)});
+
   }
 
   render() {
@@ -49,16 +50,12 @@ const styles = {
     fontWeight: 'bold'
   },
 
-  radioText: {
+  checkText: {
     color: '#000000',
     fontSize: '12pt',
     margin: '15px',
     fontWeight: 'normal'
   },
-
-  radioBtn: {
-    color: '#47a298'
-  }
 };
 
-export default RadioButtons;
+export default Checklist;
