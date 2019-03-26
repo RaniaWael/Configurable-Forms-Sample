@@ -20,13 +20,21 @@ class Button extends Component {
 
     render() {
     return (
-      <button style = { styles [ this.handleHovering() ] } onMouseEnter = { this.toggleHover }
-      onMouseLeave = { this.toggleHover }> { this.props.text } </button>
+      <div style = { styles.divStyling }>
+        <button style = { styles [ this.handleHovering() ] } onMouseEnter = { this.toggleHover }
+        onMouseLeave = { this.toggleHover }> { this.props.text } </button>
+      </div>
     );
   }
 }
 
 const styles = {
+  divStyling: {
+    width: '100%',
+    padding: '20px',
+    display: 'flex',
+    justifyContent: 'center'
+  },
   btnStyling: {
     borderColor: '#47a298',
     color: '#47a298',
