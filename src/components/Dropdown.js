@@ -6,10 +6,14 @@ class Dropdown extends Component {
       this.state = { };
   }
 
-  addOptionsToSelect(){
+  addOptionsToSelect () {
     return this.props.options.map((option) =>
       <option value= {option}> {option} </option>
     );
+  }
+
+  handleChange = (event) => {
+    this.setState({ dropdownValue: event.target.value });
   }
 
   render() {
@@ -17,7 +21,7 @@ class Dropdown extends Component {
       <div>
         <label style={ styles.labelStyle }>
           { this.props.fieldName }
-          <select style = { styles.selectStyling }>
+          <select style = { styles.selectStyling } onChange = { this.handleChange }>
             { this.addOptionsToSelect() }
           </select>
         </label>
