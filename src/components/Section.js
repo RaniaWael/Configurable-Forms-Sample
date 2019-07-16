@@ -15,6 +15,7 @@ class Section extends Component {
     formField (){
       return this.props.fields.map((field) => {
       switch(field.fieldType) {
+        case 'section': return <Section sectionName = { field.section.sectionName } fields = { field.section.fields } />; break;
         case 'radio button': return <RadioButtons fieldName = { field.fieldName } choices = { field.radioBtnOptions } />; break;
         case 'dropdown': return <Dropdown fieldName = { field.fieldName } options = { field.dropdownOptions } />; break;
         case 'check list': return <Checklist fieldName = { field.fieldName } choices = { field.checkListOptions } />; break;
