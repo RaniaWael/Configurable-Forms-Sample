@@ -39,20 +39,29 @@
       "sectionName" : "Technical Section",
       "fields" :[
         {
-          "fieldName": "University",
-          "fieldType": "dropdown",
-          "dropdownOptions": ["GUC", "AUC", "ASU", "MUST", "BUE"]
+          "fieldType": "section",
+          "section": {
+            "sectionName" : "Educational",
+            "fields" :[
+              {
+                "fieldName": "University",
+                "fieldType": "dropdown",
+                "dropdownOptions": ["GUC", "AUC", "ASU", "MUST", "BUE"]
+              },
+              {
+                "fieldName": "Major",
+                "fieldType": "dropdown",
+                "dropdownOptions": ["Computer Engineering", "Computer Science", "Communication Engineering", "Networks Engineering", "Business Informatics"]
+              },
+              {
+                "fieldName": "GPA",
+                "fieldType": "number",
+                "fieldReq": "required"
+              }
+            ]
+          }
         },
-        {
-          "fieldName": "Major",
-          "fieldType": "dropdown",
-          "dropdownOptions": ["Computer Engineering", "Computer Science", "Communication Engineering", "Networks Engineering", "Business Informatics"]
-        },
-        {
-          "fieldName": "GPA",
-          "fieldType": "number",
-          "fieldReq": "required"
-        },
+
         {
           "fieldName": "Interests",
           "fieldType": "check list",
